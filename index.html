@@ -1,156 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <div id="header">
-        <div class="container">
-            <nav>
-                <img src="imgaes/logo.jpg"class="logo"> 
-            <ul>
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#certificates">Certificates</a></li>
-              <li><a href="#contact">Contact</a></li>                           
-
-            </ul>
-          </nav>
-          <div class="header-text">
-            <h1>Hi,I'm Nagakavya</h1>
-            <p class="study">Studying B.tech 4th year in MVR college of engineering and technology</p><br>
-            <P class="bio">Frontend Developer</P><br>
-            <p  class="bio">creative thinker  |  good communicator  |    well mingler</p>      </div>
-        </div>
-      </div>
-<!-------------about--------------->
-<div id="about">
   <div class="container">
-    <div class="row">
-      <div class="about-col-2">
-      <center>
-        <h1 class="sub-title">About Me</h1>
-        <p class="paragraph"> I'm a Creative Director and Frontend Developer.I enjoy turning complex problems into simple,beautiful, and intuitive designs. My job is to build websites that are both functional and      user-friendly while being attractive. I add a personal touch to every product, ensuring it's
-      eye-catching and easy to use. My aim is to convey your message and identity in the most creative way.
-       I'm Seeking a challenging position in a reputed organization where I can learn new skills,and position to expand my knowledge , and leverage my learning.</p>
-      </center>
-        <div class="tab-titles">
-          <h2 class="tab-links">Education</h2>
-        </div>
-        <div class="education-item">
-          <div class="degree">B.Tech(Computer Science and engineering)</div>
-          <div class="university">MVR college of engineering and technology</div>
-          <div class="date">2022 - 2026</div>
-          <div class="location">Vijayawada,India</div>
-          <div class="gpa">CGPA:8.27(upto-(3-1))</div>
-          </div>
-          <div class="education-item">
-            <div class="degree">Board of intermediate Education - MPC</div>
-            <div class="university">Shanthinikethan junior college</div>
-            <div class="date">2020 - 2022</div>
-            <div class="location">Guntur,India</div>
-            <div class="gpa"><CGPA:750></CGPA:750></div>
-          </div>
-          <div class="education-item">
-            <div class="degree">S.S.C - 10th</div>
-            <div class="university">Z.P.G.H High School School</div>
-            <div class="date">2019 - 2020</div>
-            <div class="location" >Sattenapalli,India</div>
-            <div class="gpa"></CGPA:9.5></div>
-          </div>
-        </div>
-      </div>
+    <h1>Daily Expense Tracker</h1>
+
+    <!-- Salary Input -->
+    <form id="salary-form">
+      <input type="number" id="monthly-salary" placeholder="Enter Monthly Salary (₹)" required />
+      <button type="submit">Set Salary</button>
+    </form>
+
+    <!-- Expense Input -->
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Expense Name" required />
+      <input type="number" id="expense-amount" placeholder="Amount (₹)" required />
+      <input type="text" id="expense-category" placeholder="Category (e.g. Food, Travel)" required />
+      <input type="date" id="expense-date" required />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Output Summary -->
+    <div class="summary">
+      <h2>Total Salary: ₹<span id="salary-output">0</span></h2>
+      <h2>Total Spent per Category:</h2>
+      <ul id="category-summary"></ul>
+      <h2>Remaining Balance: ₹<span id="remaining-balance">0</span></h2>
     </div>
   </div>
-  </body>
-  <!-------------Skills----------->
-  <div id="skills">
-    <div class="container">
-      <center>
-      <h1 class="sub-title">Skills</h1>
-      </center>
-      <center>
-      <div class="skills-list">
-        <button class="skill-button">C</button>
-        <button class="skill-button">Java</button>
-        <button class="skill-button">Python</button>
-        <button class="skill-button">Machine Learning</button>
-        <button class="skill-button">HTML</button>
-        <button class="skill-button">CSS</button>
-        <button class="skill-button">Java Script</button>
-        <button class="skill-button">DBMS</button>
-        <button class="skill-button">SQL</button>
-      </center>
-      </div>
-    </div>
-  </div>
-  <!------------certificates----------->
-  <div id="certificates">
-    <div class="container">
-      <center>
-      <h1 class="sub-title">Certificates</h1>
-      </center>
-      <div class="certificates-list">
-        <div class="list">
-          <img src="imgaes/python.jpg" >
-        
-        </div>
-        <div class="list">
-          <img src="imgaes/ai certificate.jpg">
-        </div>
-      </div>
-    </div>
-  </div><br>
-  <br>
-  <br>
 
-
-  <section id="projects">
-         <div class="projects"></div>
-         
-         <ul>
-            
-      <li>
-        <h3>SSTIMS Project</h3><br>
-        <p>A project hosted on GitHub showcasing your skills and application logic.</p>
-     <br>
-       <a href="https://github.com/8374834151/SSTIMS250518.git" target="_blank">View on GitHub</a>
-      </li>
-    </ul>
-  </section>
-         </ul>
-<!--------------contact-------->
-<div id="contact">
-  <div class="container">
-    <center>
-    <h1 class="sub-title">Contact Me</h1>
-    </center>
-  </div>
-  <div class="contact-right">
-    <form>
-      <input type="text"name="Name"placeholder="Your Name" required>
-      <input type="email"name="email"placeholder="Your Email" required>
-      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>    </form>
-      <button type="submit"id="btn">Submit</button>
-    </div>
-</div>
-<div class="copyright">
-
-  <footer>
-      <h2>Contact</h2>
-     <p>Email: <a href="mailto:gorantlakavya0@gmail.com">kavyagorantla0@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/8374834151/SSTIMS250518" target="_blank">View Profile</a></p>
-  </footer>
-</div>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
